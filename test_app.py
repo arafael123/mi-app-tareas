@@ -24,3 +24,4 @@ def test_delete_task():
     client.post("/tasks", json={"title": "Eliminar"})
     response = client.delete("/tasks/1")
     assert response.status_code == 200
+    
